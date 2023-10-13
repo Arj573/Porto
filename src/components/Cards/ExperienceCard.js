@@ -1,18 +1,22 @@
 import React from 'react'
 import styled from "styled-components"
 
-const Document = styled.img`
+const Button = styled.a`
     display: none;
-    height: 70px;
-    width: fit-content;
-    background-color: #000;
-    border-radius: 10px;
-
-    &:hover{
-      cursor: pointer;
-      opacity?: 0.8;
-    }
 `;
+
+// const Document = styled.img`
+//     display: none;
+//     height: 70px;
+//     width: fit-content;
+//     background-color: #000;
+//     border-radius: 10px;
+
+//     &:hover{
+//       cursor: pointer;
+//       opacity?: 0.8;
+//     }
+// `;
 
 const Card = styled.div`
   width: 650px;
@@ -32,8 +36,36 @@ const Card = styled.div`
     transform: translateY(-5px);
   }
 
-&:hover ${Document} {
+&:hover ${Button} {
   display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 30%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: ${({ theme }) => theme.text_primary};
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: ${({ theme }) => theme.primary};
+    ${({ dull, theme }) => dull && `
+        background-color: ${theme.bgLight};
+        color: ${theme.text_secondary};
+        &:hover {
+            background-color: ${({ theme }) => theme.bg + 99};
+        }
+    `}
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: ${({ theme }) => theme.primary + 99};
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 10px;
+        width: 60%;
+        height: 15%;
+    }
 }
 
   @media (max-width: 768px){
@@ -161,10 +193,11 @@ const ExperienceCards = ({ experience }) => {
         </>
       )}
       </Description>
-      {experience.doc &&
+      <Button href={experience?.doc} target='new'>View Documentation</Button>
+      {/* {experience.doc &&
       <a href={experience.doc} target="new">
         <Document src={experience.doc}/>  
-      </a>}
+      </a>} */}
     </Card>
   )
 }

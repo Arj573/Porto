@@ -5,18 +5,20 @@ import {
   NavbarContainer,
   Span,
   NavLogo,
+  Logo,
   NavItems,
   MobileIcon,
   MobileMenu,
   MobileLink,
+  HamburgerContainer,
 } from "./NavbarStyledComponent";
-import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import logo from "../../images/porto_logo.png"
+import { Squash as Hamburger } from 'hamburger-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  // const theme = useTheme()
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
@@ -28,10 +30,11 @@ const Navbar = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/">
+        <NavLogo href="#about">
           <a
             style={{
               display: "flex",
@@ -41,14 +44,16 @@ const Navbar = () => {
               cursor: "pointer",
             }}
           >
-            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+            <Logo src={logo}/> <Span> My Portofolio</Span>
           </a>
         </NavLogo>
         <MobileIcon>
-          <FaBars
-            onClick={() => {
+          <Hamburger
+            onToggle={() => {
               setIsOpen(!isOpen);
+              console.log(isOpen);
             }}
+            size={20}
           />
         </MobileIcon>
         <NavItems>

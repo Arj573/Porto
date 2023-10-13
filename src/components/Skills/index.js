@@ -122,7 +122,7 @@ const Skills = () => {
       <Wrapper>
         <Title>Skills</Title>
         <Desc>
-          Here are my technical skill that i have mastered
+          Below are some technical skills that I have learned
         </Desc>
         <SkillsContainer>
           {skills.map((item) =>(

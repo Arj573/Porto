@@ -128,23 +128,23 @@ const Projects = ({ openModal, setOpenModal }) => {
             </ToggleButton>
           )}
           <Divider />
-          {toggle === "android app" ? (
-            <ToggleButton active onClick={() => setToggle("android app")}>
-              Android App
+          {toggle === "design" ? (
+            <ToggleButton active onClick={() => setToggle("design")}>
+              Design
             </ToggleButton>
           ) : (
-            <ToggleButton onClick={() => setToggle("android app")}>
-              Android App
+            <ToggleButton onClick={() => setToggle("design")}>
+              Design
             </ToggleButton>
           )}
           <Divider />
-          {toggle === "machine learning" ? (
-            <ToggleButton active onClick={() => setToggle("machine learning")}>
-              Machine Learning
+          {toggle === "mobile app" ? (
+            <ToggleButton active onClick={() => setToggle("mobile app")}>
+              Mobile App
             </ToggleButton>
           ) : (
-            <ToggleButton onClick={() => setToggle("machine learning")}>
-              Machine Learning
+            <ToggleButton onClick={() => setToggle("mobile app")}>
+              Mobile App
             </ToggleButton>
           )}
         </ToggleGroup>

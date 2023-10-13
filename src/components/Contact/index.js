@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com';
 import { Snackbar } from '@mui/material';
 
 const Container = styled.div`
@@ -118,6 +118,20 @@ const ContactButton = styled.input`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+  transition: all 0.4s ease-in-out !important;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+    box-shadow:  20px 20px 60px #1F2634,
+    filter: brightness(1);
+  } 
+  
+  @media (max-width: 640px) {
+      padding: 12px 0;
+      font-size: 18px;
+  }
+  
 `
 
 
@@ -166,4 +180,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;

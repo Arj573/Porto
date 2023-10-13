@@ -16,6 +16,7 @@ export const Nav = styled.div`
         trastion: 0.8s all ease;
     }
 `;
+
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -27,8 +28,8 @@ export const NavbarContainer = styled.div`
   max-width: 1200px;
 `;
 
-export const NavLogo = styled(LinkR)`
-    width: 80%;    
+export const NavLogo = styled.a`
+    width: 40%;    
     padding: 0 6px;
     display: flex;
     justify-content: start;
@@ -38,10 +39,22 @@ export const NavLogo = styled(LinkR)`
       padding: 0 0px;
   }
 `;
+
+export const Logo = styled.img`
+  width: 20%;
+  height: 5%;
+  background-color: white;
+  border-radius: 50%;
+}
+`;
+
 export const Span = styled.div`
     padding: 0 4px;
     font-weight: bold;
     font-size: 18px;
+    @media (max-width: 640px){
+      font-size: 12px;
+    }
 `;
 export const NavItems = styled.ul`
     width: 100%;
@@ -216,3 +229,10 @@ export const MobileNavLogo = styled(LinkR)`
     padding: 0 0px;
   }
 `;
+
+export const HamburgerContainer = styled.div`
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  height: 100vh; /* Set the height to make it center within the viewport */
+`

@@ -19,7 +19,7 @@ const Container = styled.div`
   padding: 40px 0px 80px 0px;
 
   @media (max-width: 960px){
-    padding: 10px;
+    padding: 20px;
   }
 `;
 
@@ -76,7 +76,7 @@ const Experience = () => {
     <Container id="experience">
         <Wrapper>
         <Title>Experience</Title>
-        <Desc>Here are some of my project</Desc>
+        <Desc>Here are some of my experience</Desc>
         <TimeLineSelection>
             <Timeline>
                 {experiences.map((experience, index) => (
