@@ -9,6 +9,7 @@ import {
   NavItems,
   MobileMenu,
   MobileLink,
+  HamburgerContainer,
 } from "./NavbarStyledComponent";
 import { useEffect } from "react";
 import logo from "../../images/porto_logo.png"
@@ -44,6 +45,7 @@ const Navbar = () => {
             <Logo src={logo}/> <Span> My Portofolio</Span>
           </a>
         </NavLogo>
+        <HamburgerContainer>
           <Hamburger
             onToggle={() => {
               setIsOpen(!isOpen);
@@ -52,6 +54,7 @@ const Navbar = () => {
             size={20}
             color="white"
           />
+        </HamburgerContainer>
         <NavItems>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
