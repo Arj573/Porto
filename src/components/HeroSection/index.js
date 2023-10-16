@@ -232,7 +232,7 @@ const Hero = () => {
             </ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>
-            <Image src={HeroImg} alt="Hero" />
+            <Image src="{HeroImg}" alt="Hero" />
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>

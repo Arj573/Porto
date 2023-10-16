@@ -121,21 +121,6 @@ export const ButtonContainer = styled.div`
   }
 `;
 
-
-export const MobileIcon = styled.div`
-  display: none;
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: ${({ theme }) => theme.text_primary};
-  }
-`
-
 export const MobileMenu = styled.div`
     display: flex;
     flex-direction: column;
@@ -229,10 +214,3 @@ export const MobileNavLogo = styled(LinkR)`
     padding: 0 0px;
   }
 `;
-
-export const HamburgerContainer = styled.div`
-  display: flex;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
-  height: 100vh; /* Set the height to make it center within the viewport */
-`

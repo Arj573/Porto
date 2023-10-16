@@ -7,12 +7,9 @@ import {
   NavLogo,
   Logo,
   NavItems,
-  MobileIcon,
   MobileMenu,
   MobileLink,
-  HamburgerContainer,
 } from "./NavbarStyledComponent";
-import { FaBars } from "react-icons/fa";
 import { useEffect } from "react";
 import logo from "../../images/porto_logo.png"
 import { Squash as Hamburger } from 'hamburger-react';
@@ -47,15 +44,14 @@ const Navbar = () => {
             <Logo src={logo}/> <Span> My Portofolio</Span>
           </a>
         </NavLogo>
-        <MobileIcon>
           <Hamburger
             onToggle={() => {
               setIsOpen(!isOpen);
               console.log(isOpen);
             }}
             size={20}
+            color="white"
           />
-        </MobileIcon>
         <NavItems>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
