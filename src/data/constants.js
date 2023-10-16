@@ -8,7 +8,7 @@ export const Bio = {
       "My name is Arjuna. I am currently continuing my studies at Bina Nusantara University and taking the Information System study program because my love for technology and business has made me want to become a professional in business that is integrated into IT.",
     github: "https://github.com/Arj573",
     resume:
-      "https://drive.google.com/file/d/1vysy_nlxGCP0vwdhQe0vxeVyGRFIBBFT/view?usp=drive_link",
+      "https://drive.google.com/file/d/1rumeZRtaudTujqAvrj5RPAfvErZn-nnB/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/arjuna2003",
     twitter: "https://twitter.com/arjwijya",
     insta: "https://www.instagram.com/arjwijya/",
