@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect"
-import HeroImg from "../../images/arjuna.png"
+import HeroImg from "../../images/arjuna-binus.jpg"
 
 const HeroContainer = styled.div`
   background-color: ${({ theme }) => theme.card_light};
