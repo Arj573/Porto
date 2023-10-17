@@ -41,8 +41,7 @@ export const NavLogo = styled.a`
 `;
 
 export const Logo = styled.img`
-  width: 20%;
-  height: 5%;
+  width: 15%;
   background-color: white;
   border-radius: 50%;
 }
