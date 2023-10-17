@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect"
-import HeroImg from "../../images/arjuna-binus.jpg"
+import HeroImg from "../../images/arjuna.jpg"
 
 const HeroContainer = styled.div`
   background-color: ${({ theme }) => theme.card_light};
@@ -189,7 +189,7 @@ const Image = styled.img`
   border-radius: 50%;
   max-width: 400px;
   max-height: 400px;
-  object-fit: center;
+  object-fit: cover;
   object-position: center;
   border: 2px solid ${({ theme }) => theme.primary};
 
