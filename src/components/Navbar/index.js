@@ -11,23 +11,30 @@ import {
   MobileLink,
   HamburgerContainer,
 } from "./NavbarStyledComponent";
-import { useEffect } from "react";
-import logo from "../../images/porto_logo.png"
-import { Squash as Hamburger } from 'hamburger-react';
+import { useState, useEffect } from "react";
+import logo from "../../images/porto_logo.png";
+import { Squash as Hamburger } from "hamburger-react";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
         setIsOpen(false);
       }
     };
+    const handleClickOutside = (event) => {
+      if (isOpen && !event.target.closest(".hamburger-react")) {
+        setIsOpen(false);
+      }
+    };
     window.addEventListener("resize", handleResize);
+    window.addEventListener("click", handleClickOutside);
     return () => {
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("click", handleClickOutside);
     };
-  }, []);
+  }, [isOpen]);
 
   return (
     <Nav>
@@ -42,17 +49,15 @@ const Navbar = () => {
               cursor: "pointer",
             }}
           >
-            <Logo src={logo}/> <Span> My Portofolio</Span>
+            <Logo src={logo} /> <Span> My Portofolio</Span>
           </a>
         </NavLogo>
         <HamburgerContainer>
           <Hamburger
-            onToggle={() => {
-              setIsOpen(!isOpen);
-              console.log(isOpen);
-            }}
             size={20}
             color="white"
+            toggled={isOpen}
+            toggle={setIsOpen}
           />
         </HamburgerContainer>
         <NavItems>
