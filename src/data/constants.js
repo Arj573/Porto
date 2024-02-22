@@ -152,13 +152,13 @@ export const projects = [
   {
     id: 2,
     title: "FGG App",
-    date: "Aug 2023 - Present",
+    date: "Aug 2023 - Jan 2024",
     description:
       "FGG (Fresh Graduate Guidelines) is an application created to help new graduates search for or find jobs that suit their desired interests. Currently the application is still in the prototype design stage.",
     image: "https://i.ibb.co/0Zs0xS2/FGG-Prototype.png",
     tags: ["Figma"],
     category: "design",
-    webapp: "/",
+    webapp: "https://www.figma.com/proto/DjldXdjcAz3JOTIE41W658/BJ11---3---Prototype-FGG-App?page-id=0%3A1&type=design&node-id=1-248&viewport=591%2C278%2C0.09&t=fEPv4P874iKxj7lx-1&scaling=scale-down&starting-point-node-id=1%3A168&show-proto-sidebar=1",
   },
   {
     id: 3,
@@ -191,7 +191,7 @@ export const projects = [
     title: "Segerin",
     date: "Sept 2023 - Jan 2024",
     description:
-      "SEGERIN is a business that provides various drinks with a summer themeaims to provide a fresh sensation when it is hot day. SEGERIN will also be implemented digitally use website technology to place orders and see the various menus available. So with With this website, potential customers can also see it various promotions and menus available",
+      "SEGERIN is a business that provides various drinks with a summer theme aims to provide a fresh sensation when it is hot day. SEGERIN will also be implemented digitally use website technology to place orders and see the various menus available. So with With this website, potential customers can also see it various promotions and menus available",
     image: "https://i.ibb.co/0K4gbGW/Segerin-preview.png",
     tags: ["React JS", "HTML", "CSS", "JS"],
     category: "web app",

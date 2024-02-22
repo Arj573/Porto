@@ -155,20 +155,23 @@ const Contact = () => {
   }
 
 
-
   return (
     <Container>
       <Wrapper>
         <Title id="contact">Contact</Title>
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
-        <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Email Me 🚀</ContactTitle>
+        <ContactForm ref={form} onSubmit={handleSubmit} name="contact-me">
+          <ContactTitle>Contact Me 🚀</ContactTitle>
           <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Your Name" name="from_name" />
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
+        <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyVFku9Q3uz2BdFfzZpKy0Uxnf76NfF10sXlrwoqC7EYwR7pbOjs0hwmlbC7SFpvE05/exec'
+        const form = document.forms['contact-me']
+        </script>
         <Snackbar
           open={open}
           autoHideDuration={6000}
@@ -178,6 +181,7 @@ const Contact = () => {
         />
       </Wrapper>
     </Container>
+    
   )
 }
 
