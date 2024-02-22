@@ -1,6 +1,6 @@
 export const Bio = {
   name: "Arjuna",
-  roles: ["UI/UX Designer", "Front-end Developer"],
+  roles: ["UI/UX Designer", "Front-end Developer", "Quality Assurance"],
   description:
     "My name is Arjuna. I am currently continuing my studies at Bina Nusantara University and taking the Information System study program because my love for technology and business has made me want to become a professional in business that is integrated into IT. I have an interest in becoming a web developer or front-end developer.",
   github: "https://github.com/Arj573",
