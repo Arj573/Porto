@@ -180,82 +180,85 @@ const Button = styled.a`
   }
 `;
 
-// const PopupContainer = styled.div`
-//   position: fixed;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   background-color: ${({theme}) => theme.primary};
-//   padding: 20px;
-//   border-radius: 10px;
-//   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-//   color: ${({theme}) => theme.text_secondary};
-//   z-index: 1000;
-// `;
+const PopupContainer = styled.div`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F9F9F9; 
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15); 
+  color: #333;
+  font-weight: bold;
+  z-index: 1000;
+  @media only screen and (max-width: 600px) {
+    font-size: 10px;
+    padding: 16px 
+  }
+`;
 
-// const Overlay = styled.div`
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(0, 0, , 0.5);
-//   z-index: 999;
-// `;
+const Overlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Slightly lighter overlay */
+  z-index: 999;
+`;
 
-// const CloseButton = styled.button`
-//   background: none;
-//   border: none;
-//   font-size: 18px;
-//   cursor: pointer;
-//   position: absolute;
-//   top: 10px;
-//   right: 10px;
-// `;
+const CloseButton = styled.button`
+  background: none;
+  border: none;
+  font-size: 20px; 
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #666; 
+  border-radius: 50%; 
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 12px;
+    top: 4px;
+    right: 4px;
+  }
+`;
 
-// const Button = styled.a`
-//   width: 100%;
-//   text-align: center;
-//   font-size: 16px;
-//   font-weight: 600;
-//   color: ${({ theme }) => theme.text_primary};
-//   padding: 12px 16px;
-//   border-radius: 8px;
-//   background-color: ${({ theme }) => theme.primary};
-//   cursor: pointer;
-//   text-decoration: none;
-//   transition: all 0.5s ease;
-//   &:hover {
-//     background-color: ${({ theme }) => theme.primary + 99};
-//   }
-//   @media only screen and (max-width: 600px) {
-//     font-size: 12px;
-//   }
-// `;
 
-// const Popup = ({ message, onClose }) => (
-//   <>
-//     <Overlay onClick={onClose} />
-//     <PopupContainer>
-//       <CloseButton onClick={onClose}>&times;</CloseButton>
-//       <p>{message}</p>
-//     </PopupContainer>
-//   </>
-// );
+const Popup = ({ message, onClose }) => (
+  <>
+    <Overlay onClick={onClose} />
+    <PopupContainer>
+      <CloseButton onClick={onClose}>&times;</CloseButton>
+      <p>{message}</p>
+    </PopupContainer>
+  </>
+);
 
 const App = ({ openModal, setOpenModal }) => {
   const project = openModal?.project;
-  // const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-  // const handleClick = () => {
-  //   if (project?.github === "/") {
-  //     setIsPopupOpen(true);
-  //   } else {
-  //     window.open(project?.github, "_blank");
-  //   }
-  // };
+  const handleClick = () => {
+    if (project?.github === "/") {
+      setIsPopupOpen(true);
+    } else {
+      window.open(project?.github, "_blank");
+    }
+  };
 
-  // const closePopup = () => setIsPopupOpen(false);
+  const closePopup = () => setIsPopupOpen(false);
   return (
     <Modal
       open={true}
@@ -309,10 +312,10 @@ const App = ({ openModal, setOpenModal }) => {
             </>
           )}
           <ButtonGroup>
-          <Button href={project?.github} target="new">
+          <Button onClick={handleClick}>
         View Code
       </Button>
-      {/* {isPopupOpen && <Popup message="There is no GitHub repository for this project." onClose={closePopup} />} */}
+      {isPopupOpen && <Popup message="There is no GitHub repository for this project." onClose={closePopup} />}
             <Button href={project?.webapp} target="new">
               View Live App
             </Button>
