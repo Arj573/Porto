@@ -47,7 +47,7 @@ const Navbar = () => {
               color: "white",
               marginBottom: "20;",
               cursor: "pointer",
-            }}
+            }}  
           >
             <Logo src={logo} /> <Span> My Portofolio</Span>
           </a>

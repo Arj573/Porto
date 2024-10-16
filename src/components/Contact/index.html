@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-      <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyVFku9Q3uz2BdFfzZpKy0Uxnf76NfF10sXlrwoqC7EYwR7pbOjs0hwmlbC7SFpvE05/exec'
-        const form = document.forms['contact-me']
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
-</body>
+  </head>
+  <body>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyVFku9Q3uz2BdFfzZpKy0Uxnf76NfF10sXlrwoqC7EYwR7pbOjs0hwmlbC7SFpvE05/exec";
+      const form = document.forms["contact-me"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>
