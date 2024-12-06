@@ -123,10 +123,10 @@ export const experiences = [
   {
     id: 2,
     img: tfiLogo,
-    role: "Volunteer for the introduction of religious moderation",
+    role: "Volunteer Socialization about Batik Culture",
     company: "TFI Powered by Bina Nusantara",
-    date: "Sep 2023 - Jan 2024",
-    desc: "Become a volunteer in social activities to educate the public about the socialization of religious moderation.",
+    date: "Apr 2023 - Jul 2023",
+    desc: "Become a volunteer in social activities to educate a community about Batik Cultural Socialization",
     doc: "https://binusianorg-my.sharepoint.com/personal/arjuna_binus_ac_id/_layouts/15/guestaccess.aspx?share=EdrLM9VZ6hxEl776CLcplrsBQSk2be0neJ4rcyS0Y3Avow&e=LH1bvI",
     skills: [
       "Team Work",
