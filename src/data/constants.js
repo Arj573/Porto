@@ -7,6 +7,7 @@ import figmaLogo from '../images/figmaLogo.png'
 import movistaProject from '../images/movista.png'
 import fggProject from '../images/fggProject.png'
 import kalbeFarma from '../images/kalbeFarma.png'
+import resume from '../doc/Arjuna-resume.pdf'
 
 
 
@@ -16,8 +17,7 @@ export const Bio = {
   description:
     "My name is Arjuna. I am currently continuing my studies at Bina Nusantara University and taking the Information System study program because my love for technology and business has made me want to become a professional in business that is integrated into IT. I have an interest in becoming a web developer or front-end developer.",
   github: "https://github.com/Arj573",
-  resume:
-    "https://drive.google.com/file/d/1GFPlqZjuQRXpipjYVIXhYV4odj58N6Uv/view?usp=sharing",
+  resume: resume,
   linkedin: "https://www.linkedin.com/in/arjuna2003",
   twitter: "https://twitter.com/arjwijya",
   insta: "https://www.instagram.com/arjwijya/",
@@ -163,7 +163,7 @@ export const experiences = [
 "Using JMeter and k6 to assess application performance and ensure the system can handle varying load levels",
 "Performing penetration testing using i3GIS to identify potential vulnerabilities and improve application security",
 "Developing dashboards that list all projects to facilitate effective tracking, monitoring, and project data management"],
-    doc: "https://binusianorg-my.sharepoint.com/personal/arjuna_binus_ac_id/_layouts/15/guestaccess.aspx?share=EdrLM9VZ6hxEl776CLcplrsBQSk2be0neJ4rcyS0Y3Avow&e=LH1bvI",
+    doc: "/",
     skills: [
       "Automation testing",
       "Manual testing",

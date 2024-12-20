@@ -36,6 +36,29 @@ const Navbar = () => {
     };
   }, [isOpen]);
 
+  const scrollToSection = (id) => {
+    const section = document.querySelector(id);
+    const offset = 70; 
+    if (section) {
+      const rect = section.getBoundingClientRect();
+      let top = window.scrollY + rect.top - offset;
+      if (id === "#contact" && window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+        top = document.body.scrollHeight - window.innerHeight; 
+      }
+  
+      console.log(`Scrolling to ${id}, adjusted top position: ${top}`);
+      window.scrollTo({
+        top,
+        behavior: "smooth",
+      });
+    } else {
+      console.error(`Section with ID ${id} not found!`);
+    }
+  };
+  
+  
+  
+
   return (
     <Nav>
       <NavbarContainer>
@@ -61,55 +84,106 @@ const Navbar = () => {
           />
         </HamburgerContainer>
         <NavItems>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#contact">Contact</NavLink>
+        <NavLink
+  href="#about"
+  onClick={(e) => {
+    e.preventDefault();
+    scrollToSection("#about");
+  }}
+>
+  About
+</NavLink>
+<NavLink
+  href="#skills"
+  onClick={(e) => {
+    e.preventDefault();
+    scrollToSection("#skills");
+  }}
+>
+  Skills
+</NavLink>
+<NavLink
+  href="#experience"
+  onClick={(e) => {
+    e.preventDefault();
+    scrollToSection("#experience");
+  }}
+>
+  Experience
+</NavLink>
+<NavLink
+  href="#projects"
+  onClick={(e) => {
+    e.preventDefault();
+    scrollToSection("#projects");
+  }}
+>
+  Projects
+</NavLink>
+<NavLink
+  href="#contact"
+  onClick={(e) => {
+    e.preventDefault();
+    scrollToSection("#contact");
+  }}
+>
+  Contact
+</NavLink>
+
         </NavItems>
         {isOpen && (
           <MobileMenu isOpen={isOpen}>
-            <MobileLink
-              href="#about"
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-            >
-              About
-            </MobileLink>
-            <MobileLink
-              href="#skills"
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-            >
-              Skills
-            </MobileLink>
-            <MobileLink
-              href="#experience"
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-            >
-              Experience
-            </MobileLink>
-            <MobileLink
-              href="#projects"
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-            >
-              Projects
-            </MobileLink>
-            <MobileLink
-              href="#contact"
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-            >
-              Contact
-            </MobileLink>
-          </MobileMenu>
+          <MobileLink
+            href="#about"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("#about");
+              setIsOpen(false); // Close the mobile menu after clicking
+            }}
+          >
+            About
+          </MobileLink>
+          <MobileLink
+            href="#skills"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("#skills");
+              setIsOpen(false);
+            }}
+          >
+            Skills
+          </MobileLink>
+          <MobileLink
+            href="#experience"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("#experience");
+              setIsOpen(false);
+            }}
+          >
+            Experience
+          </MobileLink>
+          <MobileLink
+            href="#projects"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("#projects");
+              setIsOpen(false);
+            }}
+          >
+            Projects
+          </MobileLink>
+          <MobileLink
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("#contact");
+              setIsOpen(false);
+            }}
+          >
+            Contact
+          </MobileLink>
+        </MobileMenu>        
         )}
       </NavbarContainer>
     </Nav>
