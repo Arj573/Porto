@@ -170,36 +170,41 @@ const ExperienceCards = ({ experience }) => {
   return (
     <Card>
       <Top>
-        <Logo src={experience.img}/>
-      <Body>
-        <Role>{experience.role}</Role>
-        <Company>{experience.company}</Company>
-        <Duration>{experience.date}</Duration>
-      </Body>
+        <Logo src={experience.img} />
+        <Body>
+          <Role>{experience.role}</Role>
+          <Company>{experience.company}</Company>
+          <Duration>{experience.date}</Duration>
+        </Body>
       </Top>
       <Description>
-      {experience.desc}
-      {experience?.skills && (
-        <>
-        <br />
-        <Skills>
-          <b>Skills:</b>
-          <ItemWrapper>
-            {experience.skills.map((skill) => (
-              <Skill>• {skill} </Skill>
+        {/* Check if desc is an array */}
+        {Array.isArray(experience.desc) ? (
+          <ul style={{ paddingLeft: '15px', paddingRight: '15px' }}>
+            {experience.desc.map((point, index) => (
+              <li key={index}>{point}</li>
             ))}
-          </ItemWrapper>
-        </Skills>
-        </>
-      )}
+          </ul>
+        ) : (
+          <p>{experience.desc}</p> // For other experiences
+        )}
+        {experience?.skills && (
+          <>
+            <br />
+            <Skills>
+              <b>Skills:</b>
+              <ItemWrapper>
+                {experience.skills.map((skill, index) => (
+                  <Skill key={index} > • {skill} </Skill>
+                ))}
+              </ItemWrapper>
+            </Skills>
+          </>
+        )}
       </Description>
       <Button href={experience?.doc} target='new'>View Documentation</Button>
-      {/* {experience.doc &&
-      <a href={experience.doc} target="new">
-        <Document src={experience.doc}/>  
-      </a>} */}
     </Card>
-  )
-}
+  );
+};
 
 export default ExperienceCards;

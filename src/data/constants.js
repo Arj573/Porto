@@ -6,6 +6,7 @@ import tfiLogo from '../images/tfiLogo.png'
 import figmaLogo from '../images/figmaLogo.png'
 import movistaProject from '../images/movista.png'
 import fggProject from '../images/fggProject.png'
+import kalbeFarma from '../images/kalbeFarma.png'
 
 
 
@@ -149,6 +150,27 @@ export const experiences = [
       "Communication",
       "Management Plan",
     ],
+  },
+  {
+    id: 4,
+    img: kalbeFarma,
+    role: "Quality Assurance - Intern",
+    company: "PT Kalbe Farma, Tbk",
+    date: "Feb 2024 - Feb 2025",
+    desc: ["Preparing essential documents such as standards, test plans, issue logs, and user matrices to ensure a structured and well-documented testing process",
+"Applying automation tools to various test cases to enhance efficiency and accuracy in the testing process",
+"Testing the functionality and security of APIs to ensure smooth system integration using Postman",
+"Using JMeter and k6 to assess application performance and ensure the system can handle varying load levels",
+"Performing penetration testing using i3GIS to identify potential vulnerabilities and improve application security",
+"Developing dashboards that list all projects to facilitate effective tracking, monitoring, and project data management"],
+    doc: "https://binusianorg-my.sharepoint.com/personal/arjuna_binus_ac_id/_layouts/15/guestaccess.aspx?share=EdrLM9VZ6hxEl776CLcplrsBQSk2be0neJ4rcyS0Y3Avow&e=LH1bvI",
+    skills: [
+      "Automation testing",
+      "Manual testing",
+      "Stress testing",
+      "Performance testing",
+    ],
+    
   },
 ];
 
