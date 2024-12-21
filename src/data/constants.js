@@ -7,7 +7,15 @@ import figmaLogo from '../images/figmaLogo.png'
 import movistaProject from '../images/movista.png'
 import fggProject from '../images/fggProject.png'
 import kalbeFarma from '../images/kalbeFarma.png'
+import katalonLogo from '../images/katalonLogo.png'
+import seleniumLogo from '../images/seleniumLogo.png'
+import k6Logo from '../images/k6Logo.png'
+// document
 import resume from '../doc/Arjuna-resume.pdf'
+import antiBullying from '../doc/antiBullying.pdf'
+import batikCulture from '../doc/batikCulture.pdf'
+import religiousModeration from '../doc/religiousModeration.pdf'
+import certifKMBD from '../doc/Certificate_KMBD.pdf'
 
 
 
@@ -55,17 +63,15 @@ export const skills = [
     skills: [
       {
         name: "Katalon",
-        image:
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+        image: katalonLogo,
       },
       {
         name: "K6",
-        image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
+        image: k6Logo,
       },
       {
         name: "Selenium",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
+        image: seleniumLogo,
       },
     ],
   },
@@ -104,7 +110,7 @@ export const experiences = [
     date: "Nov 2021 - May 2022",
     desc: "Contribute to the 2022 Nusantara Buddhist Festival as Competition Division Coordinator, from creating competition forms to supervising the competition",
     skills: ["Team Work", "Management Plan", "Content Design", "Communication"],
-    doc: "https://drive.google.com/file/d/1eiAgOwZGIAypFlxEn2qm5Ce3QQeYYDGP/view?usp=sharing",
+    doc: certifKMBD,
   },
   {
     id: 1,
@@ -113,7 +119,7 @@ export const experiences = [
     company: "TFI Powered by Bina Nusantara",
     date: "Dec 2022 - Feb 2023",
     desc: "Become a volunteer in explaining an anti-bullying topic that often occurs among children and teenagers, in an orphanage foundation",
-    doc: "https://drive.google.com/file/d/1xNRS_l3fWVw55ty5Ej4o8g6vQpkmYvMc/view?usp=sharing",
+    doc: antiBullying,
     skills: [
       "Team Work",
       "Public Relationship",
@@ -128,7 +134,7 @@ export const experiences = [
     company: "TFI Powered by Bina Nusantara",
     date: "Apr 2023 - Jul 2023",
     desc: "Become a volunteer in social activities to educate a community about Batik Cultural Socialization",
-    doc: "https://binusianorg-my.sharepoint.com/personal/arjuna_binus_ac_id/_layouts/15/guestaccess.aspx?share=EdrLM9VZ6hxEl776CLcplrsBQSk2be0neJ4rcyS0Y3Avow&e=LH1bvI",
+    doc: batikCulture,
     skills: [
       "Team Work",
       "Public Relationship",
@@ -143,7 +149,7 @@ export const experiences = [
     company: "TFI Powered by Bina Nusantara",
     date: "Sep 2023 - Jan 2024",
     desc: "Become a volunteer in social activities to educate the public about the socialization of religious moderation.",
-    doc: "https://binusianorg-my.sharepoint.com/personal/arjuna_binus_ac_id/_layouts/15/guestaccess.aspx?share=EdrLM9VZ6hxEl776CLcplrsBQSk2be0neJ4rcyS0Y3Avow&e=LH1bvI",
+    doc: religiousModeration,
     skills: [
       "Team Work",
       "Public Relationship",
@@ -163,7 +169,7 @@ export const experiences = [
 "Using JMeter and k6 to assess application performance and ensure the system can handle varying load levels",
 "Performing penetration testing using i3GIS to identify potential vulnerabilities and improve application security",
 "Developing dashboards that list all projects to facilitate effective tracking, monitoring, and project data management"],
-    doc: "/",
+    doc: '/',
     skills: [
       "Automation testing",
       "Manual testing",

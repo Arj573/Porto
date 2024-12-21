@@ -5,19 +5,6 @@ const Button = styled.a`
     display: none;
 `;
 
-// const Document = styled.img`
-//     display: none;
-//     height: 70px;
-//     width: fit-content;
-//     background-color: #000;
-//     border-radius: 10px;
-
-//     &:hover{
-//       cursor: pointer;
-//       opacity?: 0.8;
-//     }
-// `;
-
 const Card = styled.div`
   width: 650px;
   border-radius: 10px;
@@ -178,7 +165,6 @@ const ExperienceCards = ({ experience }) => {
         </Body>
       </Top>
       <Description>
-        {/* Check if desc is an array */}
         {Array.isArray(experience.desc) ? (
           <ul style={{ paddingLeft: '15px', paddingRight: '15px' }}>
             {experience.desc.map((point, index) => (
@@ -186,7 +172,7 @@ const ExperienceCards = ({ experience }) => {
             ))}
           </ul>
         ) : (
-          <p>{experience.desc}</p> // For other experiences
+          <p>{experience.desc}</p> 
         )}
         {experience?.skills && (
           <>
