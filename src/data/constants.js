@@ -16,6 +16,7 @@ import antiBullying from '../doc/antiBullying.pdf'
 import batikCulture from '../doc/batikCulture.pdf'
 import religiousModeration from '../doc/religiousModeration.pdf'
 import certifKMBD from '../doc/Certificate_KMBD.pdf'
+import InternshipCertif from '../doc/Internship_Certif.pdf'
 
 
 
@@ -169,7 +170,7 @@ export const experiences = [
 "Using JMeter and k6 to assess application performance and ensure the system can handle varying load levels",
 "Performing penetration testing using i3GIS to identify potential vulnerabilities and improve application security",
 "Developing dashboards that list all projects to facilitate effective tracking, monitoring, and project data management"],
-    doc: '/',
+    doc: InternshipCertif,
     skills: [
       "Automation testing",
       "Manual testing",
