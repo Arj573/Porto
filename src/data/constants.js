@@ -10,6 +10,8 @@ import kalbeFarma from '../images/kalbeFarma.png'
 import katalonLogo from '../images/katalonLogo.png'
 import seleniumLogo from '../images/seleniumLogo.png'
 import k6Logo from '../images/k6Logo.png'
+import playwrightLogo from '../images/playwrightLogo.png'
+import appiumLogo from '../images/appiumLogo.png'
 // document
 import resume from '../doc/Arjuna-resume.pdf'
 import antiBullying from '../doc/antiBullying.pdf'
@@ -22,9 +24,9 @@ import InternshipCertif from '../doc/Internship_Certif.pdf'
 
 export const Bio = {
   name: "Arjuna",
-  roles: ["UI/UX Designer", "Front-end Developer", "Quality Assurance"],
+  roles: ["Software Tester", "UI/UX Designer", "Front-end Developer"],
   description:
-    "My name is Arjuna. I am currently continuing my studies at Bina Nusantara University and taking the Information System study program because my love for technology and business has made me want to become a professional in business that is integrated into IT. I have an interest in becoming a web developer or front-end developer.",
+    " A passionate Information Systems graduate from Bina Nusantara University with expertise in software quality assurance. I have one year of experience at PT Kalbe Farma Tbk, specializing in API testing, penetration testing, performance testing, and automation using Katalon, Playwright, and Appium. Beyond technical skills, my experience as an Event Coordinator at KMB Dhammavaddhana sharpened my leadership and communication abilities. I’m committed to ensuring the quality and reliability of applications in a dynamic environment",
   github: "https://github.com/Arj573",
   resume: resume,
   linkedin: "https://www.linkedin.com/in/arjuna2003",
@@ -35,6 +37,31 @@ export const Bio = {
 };
 
 export const skills = [
+  {
+    title: "Software Tester",
+    skills: [
+      {
+        name: "Katalon",
+        image: katalonLogo,
+      },
+      {
+        name: "K6",
+        image: k6Logo,
+      },
+      {
+        name: "Selenium",
+        image: seleniumLogo,
+      },
+      {
+        name: "Playwright",
+        image: playwrightLogo,
+      },
+      {
+        name: "Appium",
+        image: appiumLogo,
+      },
+    ],
+  },
   {
     title: "Frontend",
     skills: [
@@ -56,23 +83,6 @@ export const skills = [
         name: "JavaScript",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
-      },
-    ],
-  },
-  {
-    title: "Software Tester",
-    skills: [
-      {
-        name: "Katalon",
-        image: katalonLogo,
-      },
-      {
-        name: "K6",
-        image: k6Logo,
-      },
-      {
-        name: "Selenium",
-        image: seleniumLogo,
       },
     ],
   },
