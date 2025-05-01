@@ -13,7 +13,7 @@ import k6Logo from '../images/k6Logo.png'
 import playwrightLogo from '../images/playwrightLogo.png'
 import appiumLogo from '../images/appiumLogo.png'
 // document
-import resume from '../doc/Arjuna-resume.pdf'
+import resume from '../doc/Arjuna-QualityAssurance.pdf'
 import antiBullying from '../doc/antiBullying.pdf'
 import batikCulture from '../doc/batikCulture.pdf'
 import religiousModeration from '../doc/religiousModeration.pdf'
@@ -173,7 +173,7 @@ export const experiences = [
     img: kalbeFarma,
     role: "Quality Assurance - Intern",
     company: "PT Kalbe Farma, Tbk",
-    date: "Feb 2024 - Feb 2025",
+    date: "Feb 2024 - Apr 2025",
     desc: ["Preparing essential documents such as standards, test plans, issue logs, and user matrices to ensure a structured and well-documented testing process",
 "Applying automation tools to various test cases to enhance efficiency and accuracy in the testing process",
 "Testing the functionality and security of APIs to ensure smooth system integration using Postman",
