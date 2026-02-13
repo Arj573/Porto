@@ -92,10 +92,11 @@ const HeroRightContainer = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 700;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
+  margin-bottom: 8px;
 
   @media screen and (max-width: 960px){
     text-align: center;
@@ -104,16 +105,14 @@ const Title = styled.div`
   @media screen and (max-width: 640px){
     font-size: 40px;
     line-height: 48px;
-    margin-bottom: 8px
+    margin-bottom: 12px
   }
 `;
 
-const Textloop = styled.div`
+const StaticRole = styled.div`
   font-size: 32px;
   font-weight: 600;
   color: ${({ theme}) => theme.text_primary};
-  line-height: 68px;
-  gap: 12px;
   display: flex;
 
   @media screen and (max-width: 960px){
@@ -122,8 +121,26 @@ const Textloop = styled.div`
 
   @media screen and (max-width: 640px){
     font-size: 22px;
-    line-height: 48px;
-    margin-bottom: 16px;
+    line-height: 30px;
+    margin-bottom: 8px;
+  }
+`;
+
+const RotatingRole = styled.div`
+  font-size: 28px;
+  font-weight: 600;
+  color: ${({ theme}) => theme.text_primary};
+  display: flex;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 960px){
+    text-align: center;
+  }
+
+  @media screen and (max-width: 640px){
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 12px;
   }
 `;
 
@@ -216,8 +233,10 @@ const Hero = () => {
             <Title>Hi, I am <br />
               {Bio.name}
             </Title>
-            <Textloop>
-              I am a 
+            <StaticRole>
+              I am a QA Analyst
+            </StaticRole>
+            <RotatingRole>
               <Span>
                 <Typewriter 
                   options={{
@@ -227,7 +246,7 @@ const Hero = () => {
                   }}
                 />
               </Span>
-            </Textloop>
+            </RotatingRole>
             <SubTitle> {Bio.description} </SubTitle>
             <ResumeButton href={Bio.resume} target='display'>
               Check Resume

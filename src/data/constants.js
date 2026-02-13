@@ -1,32 +1,31 @@
-import segerinProject from '../images/segerin.png';
-import travelokaProject from '../images/travelokaProject.png'
-import mendixLogo from '../images/mendixLogo.png'
-import kmbdLogo from '../images/kmbdLogo.jpg'
-import tfiLogo from '../images/tfiLogo.png'
-import figmaLogo from '../images/figmaLogo.png'
-import movistaProject from '../images/movista.png'
-import fggProject from '../images/fggProject.png'
-import kalbeFarma from '../images/kalbeFarma.png'
-import katalonLogo from '../images/katalonLogo.png'
-import seleniumLogo from '../images/seleniumLogo.png'
-import k6Logo from '../images/k6Logo.png'
-import playwrightLogo from '../images/playwrightLogo.png'
-import appiumLogo from '../images/appiumLogo.png'
+import segerinProject from "../images/segerin.png";
+import travelokaProject from "../images/travelokaProject.png";
+import mendixLogo from "../images/mendixLogo.png";
+import kmbdLogo from "../images/kmbdLogo.jpg";
+import tfiLogo from "../images/tfiLogo.png";
+import figmaLogo from "../images/figmaLogo.png";
+import movistaProject from "../images/movista.png";
+import fggProject from "../images/fggProject.png";
+import kalbeFarma from "../images/kalbeFarma.png";
+import bca from "../images/bca.png";
+import katalonLogo from "../images/katalonLogo.png";
+import seleniumLogo from "../images/seleniumLogo.png";
+import k6Logo from "../images/k6Logo.png";
+import playwrightLogo from "../images/playwrightLogo.png";
+import appiumLogo from "../images/appiumLogo.png";
 // document
-import resume from '../doc/Arjuna-QualityAssurance.pdf'
-import antiBullying from '../doc/antiBullying.pdf'
-import batikCulture from '../doc/batikCulture.pdf'
-import religiousModeration from '../doc/religiousModeration.pdf'
-import certifKMBD from '../doc/Certificate_KMBD.pdf'
-import InternshipCertif from '../doc/Internship_Certif.pdf'
-
-
+import resume from "../doc/Arjuna-QualityAssurance.pdf";
+import antiBullying from "../doc/antiBullying.pdf";
+import batikCulture from "../doc/batikCulture.pdf";
+import religiousModeration from "../doc/religiousModeration.pdf";
+import certifKMBD from "../doc/Certificate_KMBD.pdf";
+import InternshipCertif from "../doc/Internship_Certif.pdf";
 
 export const Bio = {
   name: "Arjuna",
-  roles: ["Software Tester", "UI/UX Designer", "Front-end Developer"],
+  roles: ["Banking & ERP Systems", "Manual & Automation Testing"],
   description:
-    " A passionate Information Systems graduate from Bina Nusantara University with expertise in software quality assurance. I have one year of experience at PT Kalbe Farma Tbk, specializing in API testing, penetration testing, performance testing, and automation using Katalon, Playwright, and Appium. Beyond technical skills, my experience as an Event Coordinator at KMB Dhammavaddhana sharpened my leadership and communication abilities. I’m committed to ensuring the quality and reliability of applications in a dynamic environment",
+    "Quality Assurance Analyst with experience in banking and ERP systems. Started as a Manual Tester and grew into a QA Analyst, specializing in requirement analysis, API testing, automation, and end-to-end system validation. Passionate about delivering reliable, high-quality software in Agile environments.",
   github: "https://github.com/Arj573",
   resume: resume,
   linkedin: "https://www.linkedin.com/in/arjuna2003",
@@ -91,8 +90,7 @@ export const skills = [
     skills: [
       {
         name: "Figma",
-        image:
-          figmaLogo,
+        image: figmaLogo,
       },
       {
         name: "Java",
@@ -174,12 +172,15 @@ export const experiences = [
     role: "Quality Assurance - Intern",
     company: "PT Kalbe Farma, Tbk",
     date: "Feb 2024 - Apr 2025",
-    desc: ["Preparing essential documents such as standards, test plans, issue logs, and user matrices to ensure a structured and well-documented testing process",
-"Applying automation tools to various test cases to enhance efficiency and accuracy in the testing process",
-"Testing the functionality and security of APIs to ensure smooth system integration using Postman",
-"Using JMeter and k6 to assess application performance and ensure the system can handle varying load levels",
-"Performing penetration testing using i3GIS to identify potential vulnerabilities and improve application security",
-"Developing dashboards that list all projects to facilitate effective tracking, monitoring, and project data management"],
+    desc: "Progressed through end-to-end testing activities within ERP-based systems, contributing to structured quality assurance processes in a pharmaceutical enterprise environment.",
+    highlights: [
+      "Preparing essential documents such as standards, test plans, issue logs, and user matrices to ensure a structured and well-documented testing process",
+      "Applying automation tools to various test cases to enhance efficiency and accuracy in the testing process",
+      "Testing the functionality and security of APIs to ensure smooth system integration using Postman",
+      "Using JMeter and k6 to assess application performance and ensure the system can handle varying load levels",
+      "Performing penetration testing using i3GIS to identify potential vulnerabilities and improve application security",
+      "Developing dashboards that list all projects to facilitate effective tracking, monitoring, and project data management",
+    ],
     doc: InternshipCertif,
     skills: [
       "Automation testing",
@@ -187,7 +188,29 @@ export const experiences = [
       "Stress testing",
       "Performance testing",
     ],
-    
+  },
+  {
+    id: 5,
+    img: bca,
+    role: "Quality Assurance Analyst",
+    company: "PT Bank Central Asia Tbk",
+    date: "May 2025 - Present",
+    desc: "Promoted from Manual Tester to QA Analyst, responsible for leading UAT, executing SIT and API testing, maintaining structured test documentation, and collaborating with business and technical stakeholders to ensure high-quality banking system releases.",
+    highlights: [
+      "Led and executed User Acceptance Testing (UAT) from scenario design to test execution",
+      "Conducted API testing to validate system integrations across banking platforms",
+      "Designed and maintained comprehensive test documentation ensuring traceability and coverage",
+      "Performed System Integration Testing (SIT) and regression testing for banking applications",
+      "Collaborated with business users, developers, and analysts to align testing objectives with project goals",
+      "Provided analytical insights and improvement recommendations to enhance product quality and testing efficiency",
+    ],
+    doc: "/",
+    skills: [
+      "Automation testing",
+      "Manual testing",
+      "Communication",
+      "Back-end testing",
+    ],
   },
 ];
 
@@ -228,7 +251,8 @@ export const projects = [
     tags: ["Figma"],
     category: "design",
     github: "/",
-    webapp: "https://www.figma.com/proto/DjldXdjcAz3JOTIE41W658/BJ11---3---Prototype-FGG-App?page-id=0%3A1&type=design&node-id=1-248&viewport=591%2C278%2C0.09&t=fEPv4P874iKxj7lx-1&scaling=scale-down&starting-point-node-id=1%3A168&show-proto-sidebar=1",
+    webapp:
+      "https://www.figma.com/proto/DjldXdjcAz3JOTIE41W658/BJ11---3---Prototype-FGG-App?page-id=0%3A1&type=design&node-id=1-248&viewport=591%2C278%2C0.09&t=fEPv4P874iKxj7lx-1&scaling=scale-down&starting-point-node-id=1%3A168&show-proto-sidebar=1",
   },
   {
     id: 3,
@@ -257,7 +281,6 @@ export const projects = [
     // ],
   },
   {
-      
     id: 4,
     title: "Segerin",
     date: "Sept 2023 - Jan 2024",
