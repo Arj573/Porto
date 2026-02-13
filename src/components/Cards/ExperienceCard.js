@@ -162,6 +162,9 @@ const HighlightItem = styled.li`
   margin-bottom: 6px;
   font-size: 14px;
   color: ${({ theme }) => theme.text_secondary};
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 const ExperienceCards = ({ experience }) => {
